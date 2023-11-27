@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoseScreenFXMLController">
+   <children>
+      <TitledPane animated="false" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0" text="You Lose">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <children>
+                  <Label fx:id="loseLbl" layoutX="46.0" layoutY="50.0" prefHeight="126.0" prefWidth="530.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="yes_Restart_btn" layoutX="65.0" layoutY="212.0" mnemonicParsing="false" onAction="#yes_Restart_M" style="-fx-background-color: red;" text="Yes, Same Diffculty" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="yes_different_Btn" layoutX="65.0" layoutY="264.0" mnemonicParsing="false" onAction="#yes_different_M" style="-fx-background-color: red;" text="Yes, Different Diffculty" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="no_Continue_Btn" layoutX="421.0" layoutY="212.0" mnemonicParsing="false" onAction="#no_Continue_M" style="-fx-background-color: red;" text="No" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+   </children>
+</AnchorPane>
